@@ -45,6 +45,13 @@
                 return userList;
             };
 
+            // Defining findById to make our test pass. Once again, it doesn't need to do anything yet.
+            Users.findById = function(id) {
+                return userList.find(function(user) {
+                    return user.id === id;
+                });
+            };
+
             return Users;
         });
 })();

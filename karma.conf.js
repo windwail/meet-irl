@@ -16,7 +16,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
     	'./node_modules/angular/angular.js',
-    	
+        './app/services/users/users-dump.js',
     	'./node_modules/angular-ui-router/release/angular-ui-router.js', // ui-router
 	    './node_modules/angular-mocks/angular-mocks.js',                 // loads our modules for tests
 	    './app/services/users/users.spec.js', 
@@ -40,7 +40,7 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['spec'],
 
 
     // web server port
